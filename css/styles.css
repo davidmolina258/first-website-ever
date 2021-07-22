@@ -1,0 +1,327 @@
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+html{
+    box-sizing: border-box;
+}
+
+/*menu*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    height: 80px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    height: 80px;    
+}
+.logo{
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color:whitesmoke;
+   
+}
+.menu{
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;   
+     
+}
+.menu a{
+    padding: 20px;
+    color:white;
+}
+a:hover{
+    background-color: rgb(52, 58, 151);
+}
+
+
+/*seccion de inicio*/
+.hero-image{
+    background-image: url(/asset/colplay4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    
+}
+.hero-image-set{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hero-image-set p{
+    color: white;
+    font-size: 2.2rem;
+    margin: 1.3rem;
+    text-align: center;
+}
+.hero-image-set h5{
+    
+    color: white;
+    font-size: 1.5rem;
+    text-align: end;
+    width: 100%;
+    margin-right: 750px;
+}
+/* final seccion de inicio*/
+
+ /*hacer un corazon*/
+.corazon{
+    position: absolute;
+    top: 0px;
+    right: 850px;
+    bottom: 0;
+    left:0;
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.corazon::after{
+    background-color: red;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:25px;  
+}
+.corazon::before{
+    content: "";
+    display: block;
+    background-color: red;
+    height: 40px;
+    width:40px;
+    position: absolute;
+    bottom: 25px;
+    border-radius: 50%;
+}
+/*final hacer un corazon*/
+
+/*animacion*/
+
+@keyframes beat{
+    0%
+    {transform: scale(0.6) rotate(-45deg);}
+    50%
+    {transform: scale(0.3) rotate(-45deg);}
+}
+   
+
+/*seccion historia*/
+.historia{
+    background: #ead2ca }
+.container-historia{
+    text-align: center;
+    padding: 50px;
+       
+}  
+#title{
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    border-radius: 20px;
+    border-top: 5px solid;
+    border-right: 5px solid;
+    border-color: white;
+    
+}
+h6{
+    font-size: 20px;
+    }
+.container-historia p{
+    background-color: #9cafb7;
+    padding: 10px;
+    font-size: larger;
+    margin-top: 15px;  
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px; 
+    width: 850px; 
+    }
+.contenedor-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+}  
+
+.contenedor-p p{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 550px;  
+}
+.contenedor-p img{
+    border-radius: 8px;
+}
+h6{
+    position: relative;
+    margin: auto;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*seccion de Integrantes*/
+
+.integrantes{
+    background: #4281a4;
+    }
+hr{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+.integrantes-container{
+    text-align: center;
+    padding: 50px;    
+       
+   }
+   
+.integrantes-container h1{
+    background-color: #e6889c;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 5px solid;
+    border-right: 5px solid;
+    border-color: #ead2ac;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.split{
+    margin-top:20px;
+    background-color: #4281a4;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: normal;
+    
+    
+}
+.split article{
+    background-color: black;
+    border-radius: 20px;
+    width: 40vw;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+
+
+}   
+.split img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+.split p{
+    padding: 20px;
+    text-align: center;
+}
+/*fin integrantes*/
+
+/*Discografia*/
+
+.discografia{
+    background-color: grey;
+    }
+.container-dis{
+    padding: 50px;
+    text-align: center;
+     
+} 
+.container-dis h1{
+    padding: 20px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 5px solid;
+    border-right: 5px solid;
+    border-color: white;
+  
+}
+.split-dis{
+    padding: 30px;
+    background-color: indianred;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.split-dis article{
+    width: 40%;
+    margin: 20px;
+    
+
+}
+.split-dis img{
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 0px 20px 20px;
+    border: 2px solid;
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.5);
+
+}
+.split-dis h2{
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    border-color: black;
+    border: 2px solid;
+    color: white;
+    text-align: start;
+    
+}
+.footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer p{
+    padding: 5px;
+}   
